@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 1</title>
+</head>
+<body>
+
+<ul id="my_list">
+    <li data-test="1 item">List item 1</li>
+    <li data-test="2 item">List item 2</li>
+    <li data-test="3 item">List item 3</li>
+    <li data-test="4 item">List item 4</li>
+    <li data-test="5 item" onclick="this.classList.toggle('new_class')">List item 5</li>
+</ul>
+
+<button onclick="setAttr()">Set attr to first item</button>
+<p></p>
+<button onclick="removeAttr()">Remove attr from second item</button>
+<p></p>
+<button onclick="getSetAttr()">Get attr from first item and Set it to third</button>
+<p></p>
+<button onclick="addClass()">Add class to all items</button>
+
+<script>
+    var my_list = document.getElementById('my_list');
+    var first_item = my_list.firstElementChild;
+    var second_item = first_item.nextElementSibling;
+    var third_item = second_item.nextElementSibling;
+    var last_item = my_list.lastElementChild;
+
+    function setAttr() {
+        first_item.setAttribute('data-test', 'I\'m first item!');
+    }
+
+    function removeAttr() {
+        second_item.removeAttribute('data-test');
+    }
+
+    function getSetAttr() {
+        var fi_attr = first_item.getAttribute('data-test');
+        third_item.setAttribute('data-test', fi_attr);
+    }
+
+    function addClass() {
+        var list_items = my_list.children;
+        for (var i = 0; i < list_items.length; i++) {
+            list_items[i].classList.add('class_test');
+        }
+    }
+
+    function toggleClass() {
+        last_item.classList.toggle('new_class');
+    }
+
+</script>
+
+</body>
+</html>

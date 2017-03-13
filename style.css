@@ -1,0 +1,13 @@
+/*#square{
+width: 500px;
+height: 500px;
+border:1px solid #000;
+margin: 50px auto 0 auto;
+}
+.filled{
+	background-color: red;
+}*/
+.form{
+	width: 50%;
+	margin: 0 auto;
+}

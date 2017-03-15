@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal_wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+
+}
+
+.modal_wrapper.hidden_wrap {
+    display: none;
+}
+
+.modal_inner {
+    width: 40%;
+    padding: 15px;
+    background: #fff;
+}
+
+.modal_inner input {
+    margin-bottom: 10px;
+}
+
+.close_modal {
+    float: right;
+    cursor: pointer;
+}
+
+.wrong_data{
+    border: 1px solid red;
+}

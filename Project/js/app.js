@@ -1,3 +1,35 @@
-/**
- * Created by nazar92 on 3/15/17.
- */
+// Modal window control
+
+var modalButton = document.getElementsByClassName('modal_button');
+var modalWindow = document.getElementsByClassName('modal_wrapper')[0];
+//var modalClose = document.getElementsByClassName('close_modal')[0];
+
+function toggleModal(){
+    modalWindow.classList.toggle('hidden_wrap');
+}
+for (var i = 0; i < modalButton.length; i++){
+    modalButton[i].onclick = toggleModal;
+}
+//function showModal(){
+//    modalWindow.classList.remove('hidden_wrap');
+//}
+//function closeModal(){
+//    modalWindow.classList.add('hidden_wrap');
+//}
+//modalButton.onclick = showModal;
+//modalClose.onclick = closeModal;
+
+var reg_btn = document.getElementById('reg_btn');
+
+function validate(){
+    var inputs = document.getElementsByClassName('form-control');
+    for (var i = 0; i < inputs.length; i++){
+        if(inputs[i].value.length <= 0){
+            inputs[i].classList.add('wrong_data')
+        } else {
+            inputs[i].classList.remove('wrong_data')
+        }
+    }
+}
+
+reg_btn.onclick = validate;

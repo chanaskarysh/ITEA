@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <ul>
+        <li class="col-xs-6">
+            <a href="#">Project</a>
+        </li>
+        <li class="col-xs-6">
+            <button type="button" class="btn btn-default pull-right modal_button">Register</button>
+        </li>
+    </ul>
+</nav>
+
+<div class="modal_wrapper hidden_wrapper">
+    <div class="modal-inner">
+        <div class="form">
+            <button class="close_wrapper modal_button">X</button>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" class="form-control">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" class="form-control">
+            <label for="pass">Password:</label>
+            <input type="text" name="pass" id="pass" class="form-control">
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone" class="form-control">
+            <button class="btn btn-primary" id="reg_btn">Register</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

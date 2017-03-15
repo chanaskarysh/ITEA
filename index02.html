@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<style>-->
+        <!--#square {-->
+            <!--width: 500px;-->
+            <!--height: 500px;-->
+            <!--border: 1px solid #000;-->
+            <!--margin: 50px auto 0 auto;-->
+        <!--}-->
+        <!--.filled {-->
+            <!--background: #000;-->
+        <!--}-->
+    <!--</style>-->
 </head>
 <body>
 
+    <!--<div id="square"></div>-->
+    <!--<button onclick="fill()">Fill</button>-->
+
+    <div class="container">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" class="form-control">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" class="form-control">
+            <label for="password">Password:</label>
+            <input type="text" name="password" id="password" class="form-control">
+            <button onclick="register()" class="btn btn-primary">Register</button>
+        </div>
+    </div>
+
 </body>
+<script src="script02.js"></script>
 </html>

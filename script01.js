@@ -19,11 +19,11 @@
 
 
 //Додамо атрибут до wrapper
-//var wrapper = document.getElementById('wrapper');
-//var wrapperClasses = wrapper.getAttribute('class');
-//var wrapperClassesNew = wrapperClasses + ' wrapper_class';
-//
-//wrapper.setAttribute('class', wrapperClassesNew);
+var wrapper = document.getElementById('wrapper');
+var wrapperClasses = wrapper.getAttribute('class');
+var wrapperClassesNew = wrapperClasses + ' wrapper_class';
+
+wrapper.setAttribute('class', wrapperClassesNew);
 
 
 //Робота з класами

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Hometask</title>
+    <script>
+        function getElements() {
+            var inputArray = document.getElementsByTagName("input");
+            console.log(inputArray);
+        }
+    </script>
+</head>
+<body>
+
+<input type="button" onclick="getElements1()" value="Задати атрибут до першого елементу">
+<input type="button" onclick="removeAttr()" value="Видалити атрибут у другого елементу">
+<input type="button" onclick="replaceCh()" value="Взяти атрибут першого і поставити його третьому елементу">
+<input type="button" onclick="setClass()" value="Додати класс до кожного елементу">
+<input type="button"  value="По кліку на останній елемент – змінювати в нього класс">
+
+<div id="d1"><li id="li1">первый </li><li id="li2">второй</li><li id="li3" onclick="changeClass()" >третий</li></div>
+<script>
+    function getElements1(){
+        var div = document.getElementById('d1');
+            div.children[0].setAttribute('id', 'newBlock');
+    }
+
+    function removeAttr(){
+        var div = document.getElementById('d1');
+        div.children[1].removeAttribute('id');
+    }
+
+    function replaceCh(){
+        var item = document.getElementById("d1");
+        var itemNewChild = item.children[0];
+        var itemOldChild = item.children[2];
+        item.replaceChild(itemNewChild, itemOldChild);
+    }
+
+    function setClass(){
+        var div = document.getElementById('d1');
+        var elems = div.getElementsByTagName('*');
+        for (var i=0; i<=elems.length-1;i++){
+            elems[i].classList.add('new_class');
+        }
+    }
+
+    function changeClass(){
+        var div = document.getElementById('d1');
+        div.lastChild.classList.remove('new_class');
+        div.lastChild.classList.add('super_new_class');
+    }
+
+</script>
+</body>
+</html>

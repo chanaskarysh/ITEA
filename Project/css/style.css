@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  align-items: stretch;
+}
+.navbar li{
+  display: flex;
+  align-items: center;
+}
+.navbar li:last-child{
+  justify-content: flex-end;
+}
+.modal_wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+}
+.modal_wrapper.hidden_wrap{
+  display: none;
+}
+.modal_inner{
+  width: 40%;
+  padding: 15px;
+  background: #fff;
+}
+.modal_inner input{
+  margin-bottom: 10px;
+}
+.close_modal {
+  float: right;
+}
+.form-control.wrong_data{
+  border: 1px solid red;
+}

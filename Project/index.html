@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <li class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <a href="#">Project</a>
+    </li>
+    <li class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+      <butto type="button" class="modal_button btn btn-default">Register</butto>
+    </li>
+  </nav>
+
+  <div class="modal_wrapper hidden_wrap">
+    <div class="modal_inner">
+      <i class="modal_button close_modal glyphicon glyphicon-remove"></i>
+        <div class="form">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" class="form-control">
+          <label for="name">E-mail:</label>
+          <input type="text" name="email" id="email" class="form-control">
+          <label for="name">Password:</label>
+          <input type="text" name="password" id="password" class="form-control">
+          <label for="name">Phone:</label>
+          <input type="text" name="phone" id="phone" class="form-control">
+          <button class="btn btn-primary" id="reg_btn">Register</button>
+        </div>
+    </div>
+  </div>
+
+<script src="js/app.js" charset="utf-8"></script>
+</body>
+</html>

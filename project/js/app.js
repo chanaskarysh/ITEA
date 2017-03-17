@@ -15,8 +15,9 @@ for (var i =0; i< modalButton.length; i++){
 var reg_btn = document.getElementById('reg_btn');
 
 function validate() {
-    var inputs = document.getElementsByName('form-control');
-    for (var i=0; i<inputs.length; i++ ){
+
+    var inputs = document.getElementsByClassName('form-control');
+    for (var i=0; i < inputs.length; i++){
         if(inputs[i].value.length <= 0){
             inputs[i].classList.add('wrong_data')
         }else {

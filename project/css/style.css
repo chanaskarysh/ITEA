@@ -36,5 +36,5 @@ margin-bottom: 10px;
     float: right;
 }
 .form-control.wrong_data{
-    border: 1px, red;
+    border: 10px solid greenyellow;
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Project</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body> 
+	<nav class="navbar navbar-inverse">
+		<li class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<a href="#">Project</a>
+		</li>
+		<li class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+			<button type="button" class="modal_button btn btn-default">Register</button>
+		</li>
+	</nav>
+
+	<div class="modal_wrapper hidden_wrap">
+		<div class="modal_inner">
+			<i class="close_modal modal_button glyphicon glyphicon-remove"></i>
+			<div class="form">
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name" class="form-control">
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email" class="form-control">
+				<label for="password">Password:</label>
+				<input type="text" name="password" id="password" class="form-control">
+				<label for="phone">Phone:</label>
+				<input type="text" name="phone" id="phone" class="form-control">
+				<button class="btn btn-primary" id="reg_btn">Register</button>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src='js/app.js'></script>
+</body>
+</html>

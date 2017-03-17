@@ -11,7 +11,6 @@ for (var i =0; i< modalButton.length; i++){
     modalButton[i].onclick = toggleModal;
 }
 
-
 var reg_btn = document.getElementById('reg_btn');
 
 function validate() {
